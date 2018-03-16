@@ -76,9 +76,11 @@ localStorage
 
 Muis/trackpad
 - Wanneer je je muis/trackpad uit zet/het niet meer doet, dan kun je met je tab-key door de website heen browsen.
+![img](focus.png "focus in project")
+
 
 Plaatjes
--
+- Wanneer de plaatjes zijn geblokkeerd, krijg je alsnog een alt-tekst te zien van dat plaatje te zien. 
 
 Fonts
 -
