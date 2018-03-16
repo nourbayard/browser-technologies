@@ -17,6 +17,29 @@ Kies 2 features van de 8
 - Maak hierover een presentatie en neem die woensdag mee, dan gaan we de resultaten bespreken
 Lezen: [Everyone has JavaScript, right?](https://kryogenix.org/code/browser/everyonehasjs.html) en [I Turned Off JavaScript and it was Glorious](https://www.wired.com/2015/11/i-turned-off-javascript-for-a-whole-week-and-it-was-glorious/)
 
+#### Onderzoek JavaScript en Cookies
+
+##### JavaScript
+
+* Netflix en Youtube doen het helemaal niet meer en je krijgt helemaal geen melding dat je javascript uit staat/kapot is in je browser
+
+* Google Maps kun je ook helemaal niet meer gebruiken, maar je krijgt toch nog een melding te zien.
+
+![img2](maps.png "google maps without js")
+
+* Bij Tumblr en Google Docs kun je nog wel de interface zien wanneer je Javascript uit staat, maar nergens op klikken. Daarnaast krijg je ook een melding te zien dat je JS nodig hebt om gebruik te maken van de interface.
+![img3](tumblr.png "tumblr")
+![img5](docs.png "google docs")
+
+* Bij Google kun je nog wel de basisfunctionaliteiten gebruiken (zoeken op website, image, nieuws, etc.) wanneer je JS uit staat.
+![img4](google.png "google without js")
+
+
+##### Cookies
+* Op de website van Guess (een klerenwinkel), kun je geen bestellingen plaatsen als je je cookies uit hebt staan.
+* In het algemeen, als je je cookies uit hebt staan en je van de ene naar de andere website, wordt je niet 'gestalkt' door reclames van de website die je eerder hebt bezocht.
+
+
 
 ### Opdracht 1.2 - Fork je OBA
 Hoe zit het eigenlijk met Progressive Enhancement van je OBA opdracht? Waarschijnlijk kan daar wel het één en ander aan verbeterd worden, dat ding is immers in een week in elkaar gehackt!
@@ -35,3 +58,30 @@ Beoordelingscriteria
   - een beschrijving van de problemen die je hebt gevonden
   - beschrijf hoe je de problemen hebt opgelost
   - of hoe je dit zou oplossen (met todo’s) als je genoeg tijd en budget zou hebben
+
+
+#### Opdracht gemaakt met de CSSTTR repo
+
+Javascript
+- Kon ik niets voor doen; als de javascript uit staat dan kun je de pagina rustig nog bekijken zonder dat er iets stuk is
+
+Cookies
+- Er zaten geen cookies op de website, dus wanneer ik de cookies uit had staan werkte de website nog steeds
+
+Kleur
+- De website is zelf zwart/wit, dus het contrast is prima en ik hoef eigenlijk geen kleuren te veranderen sinds ik gebruik heb gemaakt van kleuren die contrast hebben.
+
+localStorage
+- Maak ik geen gebruik van
+
+Muis/trackpad
+- Wanneer je je muis/trackpad uit zet/het niet meer doet, dan kun je met je tab-key door de website heen browsen.
+
+Plaatjes
+-
+
+Fonts
+-
+
+CPU throttling
+-
