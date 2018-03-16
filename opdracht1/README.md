@@ -70,20 +70,22 @@ Cookies
 
 Kleur
 - De website is zelf zwart/wit, dus het contrast is prima en ik hoef eigenlijk geen kleuren te veranderen sinds ik gebruik heb gemaakt van kleuren die contrast hebben.
+![img](contrast.png "black and white contrast")
 
 localStorage
-- Maak ik geen gebruik van
+- Maak ik geen gebruik van.
 
 Muis/trackpad
 - Wanneer je je muis/trackpad uit zet/het niet meer doet, dan kun je met je tab-key door de website heen browsen.
 ![img](focus.png "focus in project")
 
-
 Plaatjes
-- Wanneer de plaatjes zijn geblokkeerd, krijg je alsnog een alt-tekst te zien van dat plaatje te zien. 
-
-Fonts
--
+- Wanneer de plaatjes zijn geblokkeerd, krijg je alsnog een alt-tekst te zien van dat plaatje te zien.
+![img](nopics.png "no pics but still alt text")
 
 CPU throttling
--
+- Website laad snel in, zelfs met 6x CPU slowdown
+![img](throttle.png "still loads quickly with 6x cpu slowdown")
+
+Fonts
+- Kon ik niet testen omdat de chrome extention niet werkte. 
