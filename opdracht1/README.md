@@ -62,30 +62,32 @@ Beoordelingscriteria
 
 #### Opdracht gemaakt met de CSSTTR repo
 
-Javascript
+##### Javascript
 - Kon ik niets voor doen; als de javascript uit staat dan kun je de pagina rustig nog bekijken zonder dat er iets stuk is
 
-Cookies
+##### Cookies
 - Er zaten geen cookies op de website, dus wanneer ik de cookies uit had staan werkte de website nog steeds
 
-Kleur
+##### Kleur
 - De website is zelf zwart/wit, dus het contrast is prima en ik hoef eigenlijk geen kleuren te veranderen sinds ik gebruik heb gemaakt van kleuren die contrast hebben.
 ![img](contrast.png "black and white contrast")
 
-localStorage
+##### localStorage
 - Maak ik geen gebruik van.
 
-Muis/trackpad
+##### Muis/trackpad
 - Wanneer je je muis/trackpad uit zet/het niet meer doet, dan kun je met je tab-key door de website heen browsen.
 ![img](focus.png "focus in project")
 
-Plaatjes
+##### Plaatjes
 - Wanneer de plaatjes zijn geblokkeerd, krijg je alsnog een alt-tekst te zien van dat plaatje te zien.
 ![img](nopics.png "no pics but still alt text")
 
-CPU throttling
+##### CPU throttling
 - Website laad snel in, zelfs met 6x CPU slowdown
 ![img](throttle.png "still loads quickly with 6x cpu slowdown")
 
-Fonts
-- Kon ik niet testen omdat de chrome extention niet werkte. 
+##### Fonts
+- Kon ik niet testen omdat de chrome extention niet werkte.
+
+### Device Lab

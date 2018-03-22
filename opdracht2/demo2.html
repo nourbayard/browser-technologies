@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Demo 2 - FAQ</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      /* background-color: black;
+      color: white; */
+      font-family: 'Open Sans';
+    }
+
+    header>h1 {
+      text-align: center;
+    }
+
+    a {
+      /* color: white; */
+    }
+
+    ul {
+      padding: 0;
+      list-style-type: none;
+    }
+
+    li {
+      display: inline-block;
+      width: 48%;
+      text-align: center;
+      padding: 1em;
+    }
+
+    section {
+      padding: 0 2em;
+      border: 1px solid black;
+      overflow-x: scroll;
+      overflow: auto;
+      white-space: nowrap;
+
+    }
+
+    article {
+      margin: 0 3em 0 3em;
+      display: inline-block;
+    }
+
+    @media screen and (min-width:54em) {
+      body {
+        background-color: red;
+      }
+
+      nav {
+        width: 20%;
+        display: inline-block;
+        position: fixed;
+      }
+
+      section {
+        width: 76%;
+        right: 0;
+        position: absolute;
+      }
+
+      li {
+
+        width: 100%;
+      }
+    }
+  </style>
+
+
+</head>
+
+<body>
+  <header>
+    <h1>Frequently Asked Questions</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#first">What is this?</a></li>
+      <li><a href="#second">For who is this?</a></li>
+      <li><a href="#third">Why is this?</a></li>
+      <li><a href="#fourth">How much is this?</a></li>
+    </ul>
+  </nav>
+  <section>
+    <article>
+      <h1 id="first">What is this?</h1>
+      <p>This is a FAQ page.</p>
+    </article>
+    <article>
+      <h1 id="second">For who is this?</h1>
+      <p>For anyone who has questions.</p>
+    </article>
+    <article>
+      <h1 id="third">Why is this?</h1>
+      <p>Because it has to be.</p>
+    </article>
+    <article>
+      <h1 id="fourth">How much is this?</h1>
+      <p>How much you want it to be.</p>
+    </article>
+  </section>
+</body>
+
+</html>
