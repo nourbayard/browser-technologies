@@ -91,3 +91,6 @@ Beoordelingscriteria
 - Kon ik niet testen omdat de chrome extention niet werkte.
 
 ### Device Lab
+Ik heb deze website getest bij het Device Lab ![img](devicelab.jpg "device lab test")
+
+De resultaten die eruit zijn gekomen is dat bij de apparaten met een IE browser dat de website kapot gaat. Dit komt omdat IE geen grid ondersteund. Daarnaast gaat het rating- en inlog-component in de website kapot bij een aantal apparaten wanneer de browser te klein is. Ik ben erachter gekomen dat dat komt omdat ik er een min-width aan heb gegeven. 
