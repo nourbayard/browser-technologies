@@ -17,3 +17,18 @@ Beoordelingscriteria
   - Bronnen van uitleg en gebruikte artikelen.
   -	Welke browsers/devices ondersteunen deze wel/niet.
   -	Een beschrijving hoe de fallback werkt.
+
+
+## Opdracht: Feature Detectie
+
+### Carousel
+Voor de tweede demo heb ik een carousel gemaakt. Hierin komen een aantal aankondigingen (met tekst en links) in te staan.
+
+#### Fallback
+Wanneer de JS uit staat/niet werkt, komt er bovenaan de pagina een melding (d.m.v. de <noscript> tag) tevoorschijn waarin staat dat je JS gedisabled is. Tot nu toe, als de JS uit staat, komen alle meldingen onder elkaar te staan. 
+
+### FAQ lijst
+Voor de eerste demo heb ik een FAQ lijst gemaakt met vragen en antwoorden over de minor.
+
+#### Fallback
+Wanneer de JS uit staat/niet werkt, komt er bovenaan de pagina een melding (d.m.v. de <noscript> tag) tevoorschijn waarin staat dat je JS gedisabled is.
