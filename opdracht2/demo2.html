@@ -41,20 +41,13 @@
 
     section {
       padding: 0 2em;
-      overflow-x: scroll;
-      overflow: auto;
-      white-space: nowrap;
-      width: 20em;
+      transition-duration: 500ms;
+      opacity: 1;
     }
 
-    article {
-      margin: 0 60em 0 3em;
-      display: inline-block;
-    }
-
-    noscript {
-      text-align: center;
-      padding: 1rem;
+    .hidden {
+      display: none;
+      opacity: 0;
     }
 
     @media screen and (min-width:54em) {
@@ -86,11 +79,11 @@
 
 <body>
   <header>
-    <noscript>
+    <!-- <noscript>
         <div>
           Whoops...zet je Javascript aan om de enhancede versie van de FAQ te zien :)
         </div>
-      </noscript>
+      </noscript> -->
 
     <h1>Frequently Asked Questions</h1>
   </header>
@@ -102,24 +95,54 @@
       <li><a href="#fourth">How much is this?</a></li>
     </ul>
   </nav>
-  <section>
+  <section id="first">
     <article>
-      <h1 id="first">What is this?</h1>
+      <h1>What is this?</h1>
       <p>This is a FAQ page.</p>
     </article>
+  </section>
+  <section id="second">
     <article>
-      <h1 id="second">For who is this?</h1>
+      <h1>For who is this?</h1>
       <p>For anyone who has questions.</p>
     </article>
+  </section>
+  <section id="third">
     <article>
-      <h1 id="third">Why is this?</h1>
+      <h1>Why is this?</h1>
       <p>Because it has to be.</p>
     </article>
+  </section>
+
+  <section id="fourth">
     <article>
-      <h1 id="fourth">How much is this?</h1>
+      <h1>How much is this?</h1>
       <p>How much you want it to be.</p>
     </article>
   </section>
 </body>
+<script>
+  (function() {
+    var routes = {
+      init: function() {
+        var route = location.hash
+        sections.toggle(route)
+        route != '' ? sections.toggle(route) : window.location.hash = '#first'
+        window.addEventListener('hashchange', function() {
+          sections.toggle(window.location.hash)
+        })
+      }
+    }
+    var sections = {
+      toggle: function(route) {
+        var elements = document.querySelectorAll('section');
+        elements.forEach(function(el) {
+          '#' + el.id === route ? el.classList.remove('hidden') : el.classList.add('hidden')
+        })
+      }
+    }
+    routes.init()
+  })()
+</script>
 
 </html>
