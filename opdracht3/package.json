@@ -1,0 +1,19 @@
+{
+  "name": "opdracht3",
+  "version": "1.0.0",
+  "description": "Package.json for my third BT assignment",
+  "main": "app.js",
+  "scripts": {
+    "start":"nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nour Bayard",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "nodemon": "^1.17.2",
+    "request": "^2.85.0"
+  }
+}

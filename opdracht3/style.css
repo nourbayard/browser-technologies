@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin : 0 auto;
+  padding: 1em;
+  border : 1px solid black;
+}
+
+ul {
+  border: 1px solid black;
+}
+
+input[type=text] {
+  width: 15em;
+}
+
+input[type=checkbox]:checked + label {
+  text-decoration: strikethrough;
+}
+
+[draggable=true] {
+  -khtml-user-drag: element;
+}

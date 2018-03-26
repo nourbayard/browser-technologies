@@ -1,0 +1,25 @@
+<!-- GEEN client-side js, wel server side! -->
+
+<%- include('partials/head.ejs') %>
+
+  <header>
+    <h1>Tosti boodschappenlijst</h1>
+  </header>
+
+  <form action="/" method="post">
+    <input type=text placeholder="Typ om iets toe te voegen..." />
+    <input type=submit>Voeg toe</button>
+  </form>
+
+  <ul>
+    <li draggable="true"><label><input type="checkbox">Brood (gesneden)</label></li>
+    <li draggable="true"><label><input type="checkbox">Kaas (jong belegen)</label></li>
+    <li draggable="true"><label><input type="checkbox">Ketchup</label></li>
+    <li draggable="true"><label><input type="checkbox">Tijm</label></li>
+  </ul>
+
+  <p>////// wat er nog bij moet qua html: verwijder button </p>
+  <p>////// wat er nog bij moet qua js: toevoegen van ingredienten aan lijst via input type</p>
+
+
+  <%- include('partials/foot.ejs') %>
