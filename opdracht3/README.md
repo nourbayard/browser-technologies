@@ -19,7 +19,10 @@ Beoordelingscriteria
   - het heeft een gebruiksvriendelijke interface, met gebruikmaking van affordance en feedback op de interactieve elementen
 - Student kan uitleggen wat Progressive Enhancement en Feature Detectie is en hoe dit toe te passen in Web Development
 
+### User case
+"Ik wil boodschappen-om-tostis-te-maken in mijn boodschappenlijstje kunnen gooien" *_!_*
+
 ### Core functionaliteit
-Ik heb gekozen om een PE tosti-boodschappenlijstje te maken. De corefunctionaliteiten is een overzicht hebben en maken van de ingredienten die nodig zijn voor het maken van de tosti('s). 
+Ik heb gekozen om een PE tosti-boodschappenlijstje te maken. De corefunctionaliteiten is een overzicht hebben en maken van de ingredienten die nodig zijn voor het maken van de tosti('s).
 
 ### Features/Browser technologies/Accessibilities

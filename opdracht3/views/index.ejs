@@ -1,25 +1,30 @@
-<!-- GEEN client-side js, wel server side! -->
-
 <%- include('partials/head.ejs') %>
+
+  <!--
+  <form action="/" method="post">
+    <input type=text placeholder="Typ om iets toe te voegen..." />
+    <input type=submit>Voeg toe</button>
+  </form>-->
 
   <header>
     <h1>Tosti boodschappenlijst</h1>
   </header>
 
-  <form action="/" method="post">
-    <input type=text placeholder="Typ om iets toe te voegen..." />
-    <input type=submit>Voeg toe</button>
+  <form action="/toevoegen" method="post">
+
+    <input type="text" name="newpoint" placeholder="Voeg iets toe...">
+    <input type=submit placeholder="doe het"></input>
+
+    <h2> Wat heb je nodig? </h2>
+
+    <ul>
+      <% for( var i = 0; i < point.length; i++){ %>
+        <li draggable="true"><label><input type="checkbox" name="checkbox" value="<%= point[i] %>" />
+        <%= point[i] %> </label>
+        </li>
+        <% } %>
+    </ul>
+
+    <button formaction="/verwijder" type="submit" id="top"> Verwijder bullenpoint </button>
   </form>
-
-  <ul>
-    <li draggable="true"><label><input type="checkbox">Brood (gesneden)</label></li>
-    <li draggable="true"><label><input type="checkbox">Kaas (jong belegen)</label></li>
-    <li draggable="true"><label><input type="checkbox">Ketchup</label></li>
-    <li draggable="true"><label><input type="checkbox">Tijm</label></li>
-  </ul>
-
-  <p>////// wat er nog bij moet qua html: verwijder button </p>
-  <p>////// wat er nog bij moet qua js: toevoegen van ingredienten aan lijst via input type</p>
-
-
   <%- include('partials/foot.ejs') %>

@@ -5,10 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href=".../style.css">
 
   <title>Tosti Boodschappenlijst</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    form {
+      margin: 0 auto;
+      padding: 1em;
+      border: 1px solid black;
+    }
+
+    ul {
+      border: 1px solid black;
+      list-style-type: none;
+      padding: 0;
+    }
+
+    form {
+
+      width: 30%;
+    }
+
+    input[type=text] {
+      width: 15em;
+    }
+
+    input[type=checkbox]:checked+label {
+      text-decoration: line-through;
+    }
+
+    [draggable=true] {
+      -khtml-user-drag: element;
+    }
+  </style>
 </head>
 
 <body>
