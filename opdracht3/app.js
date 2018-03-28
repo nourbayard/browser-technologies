@@ -8,6 +8,8 @@ var ejs = require('ejs')
 var port = 3029
 var request = require('request')
 
+app.use(express.static('public'))
+
 // Geeft aan dat de view engine ESJ templates moet renderen als default
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set("view engine", "ejs");
@@ -28,9 +30,9 @@ var complete = ["is klaaaar nu"];
 
 // post route voor toegevoegde lijst dingen
 app.post('/toevoegen', function (req, res) {
-    var newPoint = req.body.newpoint;
+    var addPoint = req.body.addPoint;
 // voegt het nieuwe lijst ding toe aan de array door de post
-    point.push(newPoint);
+    point.push(addPoint);
     res.redirect("/");
 });
 
@@ -52,6 +54,20 @@ app.post("/verwijder", function(req, res) {
 // render de ejs & laat de toegevoegde bulletpoint zien
 app.get("/", function(req, res) {
     res.render("index", { point: point });
+});
+
+
+// Since this is the last non-error-handling
+// middleware use()d, we assume 404, as nothing else
+// responded.
+
+// $ curl http://localhost:3000/notfound
+// $ curl http://localhost:3000/notfound -H "Accept: application/json"
+// $ curl http://localhost:3000/notfound -H "Accept: text/plain"
+
+app.use(function(req, res, next) {
+    res.status(404);
+    res.send('404: File Not Found');
 });
 
 // app luistert naar de port

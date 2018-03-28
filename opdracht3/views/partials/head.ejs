@@ -2,10 +2,13 @@
 <html lang="en">
 
 <head>
+  <link href="/manifest.json" rel="manifest">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href=".../style.css">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Tosti Boodschappenlijst">
 
   <title>Tosti Boodschappenlijst</title>
 
@@ -16,39 +19,121 @@
 
     body {
       margin: 0;
+      font-family: 'Helvetica';
+      /* border: 1px solid black; */
+      padding: 0 3em;
+
     }
 
-    h1 {
+    header {
       text-align: center;
+      /* background-color: #ffe23e; */
+      padding: 1em;
+    }
+
+    h2 {
+      text-align: center
+    }
+
+    p {
+      margin: 0 auto 1em auto;
+      max-width: 72ch;
     }
 
     form {
       margin: 0 auto;
-      padding: 1em;
-      border: 1px solid black;
+      padding: 1em 2em;
     }
 
     ul {
-      border: 1px solid black;
       list-style-type: none;
-      padding: 0;
+      padding: 1em;
+      border: 1px solid black;
+
     }
 
-    form {
-
-      width: 30%;
+    li {
+      width: fit-content;
+      margin: 0.5em auto;
+      display: block;
+      max-width: 72ch;
+      font-size: 1.1em;
+      /* border: 1px solid black; */
     }
 
     input[type=text] {
-      width: 15em;
+      /* width: 15em; */
+      /* border: 1px solid black; */
+      height: 3em;
+      padding: 1em;
+      font-style: italic;
+      box-sizing: border-box;
     }
 
     input[type=checkbox]:checked+label {
       text-decoration: line-through;
     }
 
+    input[type=submit],
+    button {
+      height: 3em;
+      /* color: white; */
+      font-weight: bold;
+      border: none;
+      border: 1px solid black;
+
+    }
+
+    button {
+      margin: 0 auto;
+      display: block;
+      /* background: #ff2b2b;  */
+      /* background: #ff4242; */
+      /* ffe23e */
+      border: 1px solid black;
+      padding: 0 2em;
+    }
+
+    input[type=submit] {
+      background-color: #303030;
+    }
+
     [draggable=true] {
       -khtml-user-drag: element;
+    }
+
+    input {
+      display: inline-block;
+    }
+
+    form {
+      /* border: 1px solid black */
+    }
+
+    div {
+      width: fit-content;
+      margin: 0 auto;
+      /* border: 1px solid black; */
+    }
+
+    div>label {
+      position: absolute;
+      left: -999em
+    }
+
+    div>button {
+      display: inline-block
+    }
+
+    @media screen and (min-width: 66em) {
+      body {
+        max-width: 66rem;
+        margin: 0 auto;
+      }
+      form {
+        /* border: 1px solid black */
+        width: 40%;
+      }
     }
   </style>
 </head>

@@ -1,0 +1,19 @@
+{
+  "name": "Tosti Boodschappenlijstje",
+  "short_name": "Lijstje",
+  "description": null,
+  "dir": "auto",
+  "lang": "nl-NL",
+  "display": "standalone",
+  "orientation": "portrait",
+  "start_url": "/",
+  "background_color": "#5E4485",
+  "theme_color": "#FFFFFF",
+  "icons": [
+    {
+      "src": "/icon.png",
+      "sizes": "200x200",
+      "type": "image/png"
+    }
+  ]
+}
