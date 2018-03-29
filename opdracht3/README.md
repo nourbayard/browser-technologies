@@ -132,6 +132,9 @@ Beoordelingscriteria
   - Feedback: wanneer de gebruiker een van de ```<li>``` elementen verplaatst, dan wordt dat element deels doorzichtig en komt er een randje om het ```li``` element waarover gehovered wordt.
   ![Feedback van de drag](img/feedback_drag.png)
 
+### Screenshot
+![Screenshot van de app](img/app.png)
+
 
 ### TL;DR
 
