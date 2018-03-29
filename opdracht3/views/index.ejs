@@ -11,21 +11,25 @@
     <h2> Wat heb je nodig? </h2>
 
     <div>
-      <label for="add">Voeg iets toe</label>
-      <input id="add" type="text" name="addPoint" placeholder="Voeg iets toe">
+      <label for="add">Typ hier wat je nodig hebt</label>
+      <input id="add" type="text" name="addPoint" placeholder="Zeg het eens">
 
-      <button type="submit" name="verstuur">Voeg toe</button>
+      <button type="submit" name="verstuur" class="button">Voeg toe</button>
     </div>
 
-    <ul>
+    <ul id="columns">
       <% for( var i = 0; i < point.length; i++){ %>
-        <li draggable="true"><label><input type="checkbox" name="checkbox" value="<%= point[i] %>" />
-        <%= point[i] %> </label>
+        <li draggable="true" class="column">
+
+          <label class="strikethrough" for="click">
+            <input type="checkbox" name="checkbox" value="<%= point[i] %>" id="click" />
+          <%= point[i] %>
+        </label>
         </li>
         <% } %>
     </ul>
 
-    <button formaction="/verwijder" type="submit"> Verwijder bulletpoint </button>
+    <button formaction="/verwijder" type="submit" class="button"> Verwijder bulletpoint </button>
   </form>
 
   <%- include('partials/foot.ejs') %>

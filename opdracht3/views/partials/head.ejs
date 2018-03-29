@@ -15,14 +15,14 @@
   <style>
     * {
       box-sizing: border-box;
+      text-align: center;
     }
 
     body {
       margin: 0;
-      font-family: 'Helvetica';
+      font-family: 'Helvetica', sans-serif;
       /* border: 1px solid black; */
       padding: 0 3em;
-
     }
 
     header {
@@ -31,83 +31,20 @@
       padding: 1em;
     }
 
+    h1,
     h2 {
-      text-align: center
+      /* text-shadow: 2px 2px #fff; */
+      /*#ffbaba*/
+    }
+
+    h1 {
+      /* text-shadow: 2px 2px #000;
+      color: white; */
     }
 
     p {
       margin: 0 auto 1em auto;
       max-width: 72ch;
-    }
-
-    form {
-      margin: 0 auto;
-      padding: 1em 2em;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 1em;
-      border: 1px solid black;
-
-    }
-
-    li {
-      width: fit-content;
-      margin: 0.5em auto;
-      display: block;
-      max-width: 72ch;
-      font-size: 1.1em;
-      /* border: 1px solid black; */
-    }
-
-    input[type=text] {
-      /* width: 15em; */
-      /* border: 1px solid black; */
-      height: 3em;
-      padding: 1em;
-      font-style: italic;
-      box-sizing: border-box;
-    }
-
-    input[type=checkbox]:checked+label {
-      text-decoration: line-through;
-    }
-
-    input[type=submit],
-    button {
-      height: 3em;
-      /* color: white; */
-      font-weight: bold;
-      border: none;
-      border: 1px solid black;
-
-    }
-
-    button {
-      margin: 0 auto;
-      display: block;
-      /* background: #ff2b2b;  */
-      /* background: #ff4242; */
-      /* ffe23e */
-      border: 1px solid black;
-      padding: 0 2em;
-    }
-
-    input[type=submit] {
-      background-color: #303030;
-    }
-
-    [draggable=true] {
-      -khtml-user-drag: element;
-    }
-
-    input {
-      display: inline-block;
-    }
-
-    form {
-      /* border: 1px solid black */
     }
 
     div {
@@ -116,23 +53,125 @@
       /* border: 1px solid black; */
     }
 
+    div>button {
+      border-left: none;
+      margin-left: -40px;
+      /* border-radius: 10px 30px 15px 60px; */
+      /* border-radius: 40px 30px 5px 40px; */
+      display: inline-block;
+    }
+
     div>label {
       position: absolute;
-      left: -999em
+      left: -999em;
     }
 
-    div>button {
-      display: inline-block
+    input[type=text] {
+      width: 74%;
+      /* border: 1px solid black; */
+      height: 3em;
+      border: 2px solid black;
+      padding: 1em 3.5em 1em 1em;
+      font-style: italic;
+      box-sizing: border-box;
+      text-align: left;
     }
 
-    @media screen and (min-width: 66em) {
-      body {
-        max-width: 66rem;
-        margin: 0 auto;
-      }
+    form {
+      margin: 0 auto;
+      padding: 1em 2em;
+    }
+
+    li {
+      width: fit-content;
+      margin: 0.5em auto;
+      display: block;
+      max-width: 72ch;
+    }
+
+    input {
+      display: inline-block;
+    }
+
+    li>label {
+      cursor: move !important;
+    }
+
+    li>label.strikethrough #click:checked {
+      text-decoration: line-through !important;
+    }
+
+    /*
+    input[type=checkbox]:checked>label.strikethrough {
+      text-decoration: line-through !important;
+    } */
+
+    [draggable=true] {
+      -khtml-user-select: none;
+      user-select: none;
+      /* Required to make elements draggable in old WebKit */
+      -khtml-user-drag: element;
+      -webkit-user-drag: element;
+    }
+
+    .column.dragElem {
+      opacity: 0.5;
+    }
+
+    .column.over {
+      border: 2px dashed red;
+    }
+
+    @media screen and (min-width: 30em) {
       form {
         /* border: 1px solid black */
-        width: 40%;
+        width: 24em;
+      }
+    }
+
+    .detailpage .main,
+    input[type=search],
+    .letter-list a {
+      border: 1px solid #323232;
+    }
+
+
+    button {
+      display: block;
+      margin: 0 auto;
+      height: 3em;
+      padding: 0 1.5em;
+      border: 2px solid black;
+      color: white;
+      font-weight: bold;
+      background: #0300ff;
+      /* background: #ffe23e; */
+      /* #ffe23e  #B30000 #e60000*/
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 1em;
+      border: 3px solid black;
+      margin: 1em 0 1.5em 0;
+    }
+
+    @supports (box-shadow: 7px 6px rgba(0, 0, 0, 0.99)) {
+
+      input[type=text],
+      button {
+        box-shadow: 7px 6px rgba(0, 0, 0, 0.99);
+      }
+
+      ul {
+        box-shadow: 7px 6px rgba(0, 0, 0, 0.99);
+      }
+    }
+
+
+    @supports (border-radius: 10px 30px 15px 60px) {
+      div>button {
+        border-radius: 10px 30px 15px 60px;
       }
     }
   </style>

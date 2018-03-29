@@ -7,8 +7,10 @@ var bodyParser = require('body-parser')
 var ejs = require('ejs')
 var port = 3029
 var request = require('request')
+var fs = require('fs')
+var path = require('path')
 
-app.use(express.static('public'))
+app.use(express.static(path.join(__dirname, 'public')))
 
 // Geeft aan dat de view engine ESJ templates moet renderen als default
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -16,9 +18,8 @@ app.set("view engine", "ejs");
 //render css files
 // app.use(express.static("public"));
 
-
 app.get('/', function (req, res) {
-  console.log('skuuuurt')
+  console.log('skurttt skurt PRRRR')
   res.render("index", { point: point});
 })
 
@@ -55,15 +56,6 @@ app.post("/verwijder", function(req, res) {
 app.get("/", function(req, res) {
     res.render("index", { point: point });
 });
-
-
-// Since this is the last non-error-handling
-// middleware use()d, we assume 404, as nothing else
-// responded.
-
-// $ curl http://localhost:3000/notfound
-// $ curl http://localhost:3000/notfound -H "Accept: application/json"
-// $ curl http://localhost:3000/notfound -H "Accept: text/plain"
 
 app.use(function(req, res, next) {
     res.status(404);
