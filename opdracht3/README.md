@@ -112,9 +112,9 @@ Keyboard & Screenreader
 - Alle ```input``` attributen hebben een bijbehorend label waarin staat waar de input voor is.
 - De kleurcontrasten zijn zwart/wit en wit/blauw. Om er zeker van te zijn dat de tekst nog steeds te lezen is door met de contrasten heb ik [contrastchecker](https://contrastchecker.com) gebruikt.
 
-![Contrast Checker](/img/cc1.png "Screenshot van de website Contrast Checker met de kleuren wit op blauw. De ratio is 8.58.")
+![Contrast Checker](img/cc1.png "Screenshot van de website Contrast Checker met de kleuren wit op blauw. De ratio is 8.58.")
 
-![Contrast Checker](/img/cc2.png "Screenshot van de website Contrast Checker met de kleuren zwart op wit. De ratio is 21.")
+![Contrast Checker](img/cc2.png "Screenshot van de website Contrast Checker met de kleuren zwart op wit. De ratio is 21.")
 
 ### Pattern Primer
 > De demo is opgebouwd in 3 lagen, volgens het principe van Progressive Enhancement
